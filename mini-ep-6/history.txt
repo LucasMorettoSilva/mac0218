@@ -1,0 +1,26 @@
+  929  sudo systemctl start docker
+  930  docker ps -a
+  931  docker pull caddy:alpine
+  932  mkdir pages
+  933  touch pages/index.html
+  934  subl pages/index.html
+  935  touch pages/about.html
+  936  subl pages/about.html
+  945  touch Caddyfile
+  946  subl Caddyfile 
+  947  touch Dockerfile
+  948  subl Dockerfile 
+  951  docker build -t mini-ep-6 .
+  952  docker images
+  953  docker run --name mini-ep-6 -p 8080:80 mini-ep-6
+  954  docker ps -a
+  955  docker rm -f mini-ep-6 
+  963  docker images
+  964  docker rmi mini-ep-6
+  966  docker build -t mini-ep-6 .
+  967  docker run --name mini-ep-6 --rm -p 8080:80 mini-ep-6
+  968  docker ps -a
+  970  docker run --name mini-ep-6 --rm -p 8080:80 -v ${PWD}/pages:/usr/src/pages mini-ep-6
+  971  history | tail -n 100 | grep -i 'docker\|caddy'
+  972  history | tail -n 100 | grep -i 'docker\|caddy\|index.html\|about.html\|pages'
+  973  history | tail -n 100 | grep -i 'docker\|caddy\|index.html\|about.html\|pages' > history.txt
