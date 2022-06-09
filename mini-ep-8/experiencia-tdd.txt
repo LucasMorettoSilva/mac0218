@@ -1,0 +1,11 @@
+Minha  experiência  com  TDD  sempre foi  muito  positiva. Desde que comecei a
+entrar no mundo da programação sempre me foi levantado a importância de, antes
+de implementar o código, primeiramente definir o comportamento esperado
+do mesmo (interface). Porém, anteriormente eu não escrevia testes unitários
+para o código.
+
+Desde que aprendi TDD, ao entrar no meu primeiro emprego, tive uma experiência muito
+satisfatória com essa abordagem. Inicialmente seguir o ciclo de TDD é um tanto demorado,
+realizar baby steps e etc.. Porém, atualmente me sinto mais seguro com o código com o
+qual desenvolvo sabendo que os testes unitários sempre estarão lá para garantir que
+o comportamento sempre estará sendo testado.
